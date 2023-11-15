@@ -26,7 +26,7 @@ function Header() {
          <RiAccountPinBoxFill className="flex text-4xl "/>
         </Link>
       </div>):(<div className="text-2xl  border rounded-lg border-green-400 bg-indigo-500 p-1 m-3">
-        <Link href={"/signin"} className="flex">
+        <Link href={"/signup"} className="flex">
           ورود
           <LiaSignInAltSolid />
         </Link>
