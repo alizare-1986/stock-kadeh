@@ -1,11 +1,13 @@
 import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import SigninPage from "@/template/SigninPage";
+import connectDb from "@/utils/connectDb";
 import { getServerSession } from "next-auth";
 import { redirect } from "next/navigation";
 
-function SignIn() {
-    const session = getServerSession(authOptions)
-    if(session) redirect("/")
+async function SignIn() {
+   
+    const session =await getServerSession(authOptions)
+    if(session) return redirect("/")
    
     return (
        <SigninPage/>

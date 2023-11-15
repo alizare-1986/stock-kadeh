@@ -6,10 +6,11 @@ import User from "@/models/User";
 import SidebarAccount from "@/layout/SidebarAccount";
 
 async function AccountLayout({ children }) {
+  await connectDb();
   const session = await getServerSession(authOptions);
 
   if (!session) redirect("/signin");
-  await connectDb();
+  
   const user = await User.findOne({ email: session.user.email });
 
   if (!user) return <h2>مشکلی وجود دارد</h2>;
