@@ -29,7 +29,7 @@ function Header() {
         </div>
       ) : (
         <div className="text-2xl  border rounded-lg border-green-400 bg-indigo-500 p-1 m-3">
-          <Link href={"/signup"} className="flex">
+          <Link href={"/signin"} className="flex">
             ورود
             <LiaSignInAltSolid  />
           </Link>

@@ -4,7 +4,7 @@ import connectDb from "@/utils/connectDb";
 
 async function BuyProducts({searchParams}) {
 await connectDb()
-let product =await Product.find()
+let product =await Product.find({published:true})
 if(searchParams.category){
     product=product.filter((i)=>i.category=== searchParams.category)
 }
