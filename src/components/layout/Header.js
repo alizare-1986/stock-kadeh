@@ -9,8 +9,8 @@ function Header() {
   const { data } = useSession();
 
   return (
-    <div className=" flex p-1  border rounded-lg bg-blue-400 justify-between items-center  ">
-      <div className="flex text-xl mx-1">
+    <div className=" flex p-1 h-20  border rounded-lg bg-blue-400 justify-between items-center  ">
+      <div className="flex text-xl mx-1 max-sm:text-sm">
         <Link href={"/"} className="flex mx-4">
           <AiOutlineHome />
           خانه
@@ -20,7 +20,7 @@ function Header() {
           آگهی ها
         </Link>
       </div>
-      <h1 className="text-4xl text-red-800">استوک کده</h1>
+      <h1 className="text-4xl text-orange-800 [text-shadow:2px_2px_2px_var(--tw-shadow-color)] shadow-green-800 max-sm:text-2xl">استوک کده</h1>
       {data ? (
         <div className="text-2xl  border rounded-lg border-green-400  mx-10 bg-lime-300 box-border">
           <Link href={"/account"}>
@@ -31,7 +31,7 @@ function Header() {
         <div className="text-2xl  border rounded-lg border-green-400 bg-indigo-500 p-1 m-3">
           <Link href={"/signup"} className="flex">
             ورود
-            <LiaSignInAltSolid />
+            <LiaSignInAltSolid  />
           </Link>
         </div>
       )}
