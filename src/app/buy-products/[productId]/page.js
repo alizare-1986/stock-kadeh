@@ -13,3 +13,12 @@ async function ProductDetails({params:{productId}}) {
 }
 
 export default ProductDetails;
+export const generateMetadata=async({params:{productId}})=>{
+    await connectDb()
+    const product =await Product.findOne({_id:productId})
+    return {
+        title:product.title,
+        description:product.description
+    }
+
+}
