@@ -4,7 +4,7 @@ import { icons } from "src/constant/icons";
 
 function DetailsPage({ data }) {
   return (
-    <div className=" flex flex-col mt-4 items-center border rounded-xl mx-40 max-sm:mx-12">
+    <div className=" flex flex-col mt-4 items-center border rounded-xl mx-40 max-sm:mx-6">
       <p className=" text-8xl mt-5">{icons[data.category]}</p>
       <div className="flex flex-col justify-center items-center mt-2">
         <BoxDetails>
