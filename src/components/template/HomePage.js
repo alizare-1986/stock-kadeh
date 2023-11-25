@@ -15,8 +15,8 @@ async function HomePage() {
  const product = products.slice(0,3)
 
   return (
-    <div>
-      <div className="flex justify-center items-center  text-4xl p-10 text-blue-700 max-sm:text-2xl">
+    <div className=" mb-10">
+      <div className="flex justify-center items-center  text-4xl p-10 text-blue-700 max-sm:text-xl">
         سایت نمایشگاهی گوشیهای شما
       </div>
       <div className="flex justify-center  items-center  text-2xl p-5 text-blue-700 max-sm:text-2xl">
@@ -47,7 +47,7 @@ async function HomePage() {
       </div>
       <div className="flex flex-col justify-center rounded-2xl mt-10 items-center border mx-4 ">
        
-      <div className="flex  mt-10 flex-wrap justify-center items-center ">
+      <div className="flex  mt-10 flex-wrap justify-center items-center  ">
         {product.map((item) => (
           <Card key={item._id} data={item} />
         ))}

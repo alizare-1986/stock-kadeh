@@ -37,7 +37,7 @@ function AddProductPage({ data }) {
       toast.error(data.error);
     } else {
       toast.success(data.message);
-      router.replace("/account/my-product")
+      router.replace("/account/my-product");
       router.refresh();
     }
   };
@@ -54,13 +54,13 @@ function AddProductPage({ data }) {
       toast.error(data.error);
     } else {
       toast.success(data.message);
-      router.replace("/account/my-product")
+      router.replace("/account/my-product");
       router.refresh();
     }
   };
- 
+
   return (
-    <div className=" flex flex-col mb-10 items-center border rounded-xl  h-fit shadow-xl shadow-violet-800 mx-60  justify-center max-sm:mx-12 max-md:mx-12 ">
+    <div className=" flex flex-col mb-10 items-center border rounded-xl  h-fit shadow-xl shadow-violet-800 mx-60  justify-center max-sm:mx-6 max-md:mx-12 ">
       {/* <h3 className=" text-2xl text-blue-800 m-4">ثبت آگهی</h3> */}
       <h3 className=" text-2xl text-blue-800 m-4">
         {data ? "ویرایش آگهی" : "ثبت آگهی"}
