@@ -27,8 +27,7 @@ async function HomePage() {
           فروش
           <FaSellcast />
         </p>
-      </div>
-      <div className="flex justify-center  items-center  text-2xl p-5 text-green-700 max-sm:text-2xl">
+      
         <p className="mx-6 flex border p-1 rounded-lg shadow-xl shadow-gray-500">
           کارکرده <MdMobileScreenShare />
         </p>

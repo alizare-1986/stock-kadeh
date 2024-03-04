@@ -10,17 +10,15 @@ function Header() {
 
   return (
     <div className=" flex p-1 h-20  border rounded-lg bg-blue-400 justify-between items-center  ">
-      <div className="flex text-xl mx-1 max-sm:text-sm">
-        <Link href={"/"} className="flex mx-4">
+      <div className="flex text-3xl mx-1 max-sm:text-sm">
+        <Link href={"/"} className="flex mx-4 ">
           <AiOutlineHome />
-          خانه
         </Link>
-        <Link href={"/buy-products"} className="flex">
+        <Link href={"/buy-products"} className="flex mr-5">
           <FiAlignCenter />
-          آگهی ها
         </Link>
       </div>
-      <h1 className="text-4xl text-orange-800 [text-shadow:2px_2px_2px_var(--tw-shadow-color)] shadow-green-800 max-sm:text-2xl">استوک کده</h1>
+      <h1 className="text-4xl text-gray-800 [text-shadow:4px_4px_4px_var(--tw-shadow-color)] shadow-green-800 max-sm:text-2xl">استوک کده</h1>
       {data ? (
         <div className="text-2xl  border rounded-lg border-green-400  mx-10 bg-lime-300 box-border">
           <Link href={"/account"}>
