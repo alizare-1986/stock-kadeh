@@ -11,10 +11,10 @@ function Header() {
   return (
     <div className=" flex p-1 h-20  border rounded-lg bg-blue-400 justify-between items-center  ">
       <div className="flex text-3xl mx-1 max-sm:text-sm">
-        <Link href={"/"} className="flex mx-4 ">
+        <Link href={"/"} className="flex mx-4 hover:scale-150">
           <AiOutlineHome />
         </Link>
-        <Link href={"/buy-products"} className="flex mr-5">
+        <Link href={"/buy-products"} className="flex mr-5 hover:scale-150">
           <FiAlignCenter />
         </Link>
       </div>
@@ -22,14 +22,14 @@ function Header() {
       {data ? (
         <div className="text-2xl  border rounded-lg border-green-400  mx-10 bg-lime-300 box-border">
           <Link href={"/account"}>
-            <RiAccountPinBoxFill className="flex text-4xl " />
+            <RiAccountPinBoxFill className="text-4xl hover:scale-150" />
           </Link>
         </div>
       ) : (
-        <div className="text-2xl  border rounded-lg border-green-400 bg-indigo-500 p-1 m-3">
-          <Link href={"/signin"} className="flex">
+        <div className=" flex flex-row text-2xl  items-center  border rounded-lg border-green-400 bg-indigo-500 p-1 m-3 hover:scale-110">
+          <Link href={"/signin"} className="flex ">
             ورود
-            <LiaSignInAltSolid  />
+            <LiaSignInAltSolid   className=" text-3xl "/>
           </Link>
         </div>
       )}
