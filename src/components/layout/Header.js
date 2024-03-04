@@ -10,7 +10,7 @@ function Header() {
 
   return (
     <div className=" flex p-1 h-20  border rounded-lg bg-blue-400 justify-between items-center  ">
-      <div className="flex text-3xl mx-1 max-sm:text-sm">
+      <div className="flex text-3xl mx-1 max-sm:text-md">
         <Link href={"/"} className="flex mx-4 hover:scale-150">
           <AiOutlineHome />
         </Link>
