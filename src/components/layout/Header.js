@@ -6,7 +6,9 @@ import { AiOutlineHome } from "react-icons/ai";
 import { FiAlignCenter } from "react-icons/fi";
 import { useSession } from "next-auth/react";
 function Header() {
-  const { data } = useSession();
+  const { data } =useSession()
+
+
 
   return (
     <div className=" flex p-1 h-20  border rounded-lg bg-blue-400 justify-between items-center  ">
